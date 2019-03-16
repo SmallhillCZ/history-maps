@@ -1,0 +1,75 @@
+
+$icon_size: 80px;
+$icon_count: 4;
+$margin: 10px;
+
+mapycz-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.icons {
+  position: fixed;
+  top: 0;
+  height: $icon_size + $margin;
+  right: 0;
+  width: $icon_size * $icon_count + $margin * ($icon_count + 1);
+}
+
+.icons .icon {
+  display: inline-block;
+  margin: $margin $margin 0 0;
+  width: $icon_size;
+  height: $icon_size;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.icons .icon:first-child {
+  margin-left: $margin;
+}
+
+.panel {
+  position: fixed;
+  top: $icon_size + $margin;
+  bottom: 10vh;
+  right: 0;
+  width: $icon_size * $icon_count + $margin * ($icon_count + 1);
+}
+
+.panel.big {
+  width: 100vw;
+}
+
+.panel > div {
+  position: absolute;
+  top: $margin;
+  right: $margin;
+  bottom: 0;
+  left: $margin;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: $margin;
+}
+.timeline {
+  position: fixed;
+  height: 10vh;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.timeline > div {
+  position: absolute;
+  top: $margin;
+  right: $margin;
+  bottom: $margin;
+  left: $margin;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: $margin;
+}

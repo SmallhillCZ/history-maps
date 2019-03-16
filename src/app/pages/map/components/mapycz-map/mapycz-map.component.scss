@@ -1,0 +1,15 @@
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+::ng-deep .smap .copyright {
+  bottom: 10vh !important;
+  right: 10px !important;
+  text-align:right;
+}
+
+::ng-deep .smap .layer-switch{
+  top: 10px !important;
+  left: 10px !important;
+}
